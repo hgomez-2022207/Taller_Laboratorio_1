@@ -8,13 +8,13 @@ body{
 
 main{
     align-items: center;
-    max-width: 80vh;
-    padding: 20px;
+    max-width: 95vh;
+    padding: 10px;
     background-color: aliceblue;
     color: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
     margin-top: 5%;
-    margin-left: 5%;
-    margin-right: 5%;
+    margin-left: 3%;
+    margin-right: 3%;
 }
 
 .div2{
@@ -24,7 +24,7 @@ main{
     margin: 10px auto;
     background-color: transparent;
     margin-top: 40px;
-    margin-left: 5%;
+    margin-left: 3%;
     border-color: aliceblue;
 }
 
@@ -91,4 +91,43 @@ button:hover{
     margin-left: 1%;
     margin-bottom: 1%;
     margin-top: 1%;
+}
+
+section{
+    display: flex;
+    height: 200px;
+    width: 80vh;
+}
+
+section img{
+    width: 0px;
+    flex-grow: 1;
+    object-fit: cover;
+    transition: 5s ease;
+}
+
+section img:hover{
+    cursor: crosshair;
+    width: 300px;
+    filter: contrast(120%);
+}
+
+.modal-container{
+    display: inline-block;
+    position: relative;
+}
+
+.modal-container img{
+    z-index: 1;
+}
+
+.section img::after{
+    content: '';
+    position: fixed;
+    width: 100vh;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.56);
+    z-index: 0;
 }

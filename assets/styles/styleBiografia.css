@@ -1,0 +1,96 @@
+main{
+    
+    max-width: 800px;
+    margin: 60px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    align-items: center;
+    color: rgba(31,121,9,1);
+}
+
+nav{
+    background: linear-gradient(rgba(0,255,35,1) 100% 0%, rgba(31,121,9,1) 35%, rgba(0,255,35,1) 100%);
+    align-items: end;
+    background-color: aqua;
+    position: absolute;
+    top: 10px;
+    position: absolute;
+    width: 93vh;
+    height: 3vh;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-radius: 8px;
+}
+
+button{
+    background: linear-gradient(90deg, rgba(0,255,35,1) 100% 0%, rgba(31,121,9,1) 35%, rgba(0,255,35,1) 100%);
+    color: green;
+    border-radius: 8px;
+    font-family: Arial, Helvetica, sans-serif;
+    border: greenyellow;
+    padding: auto;
+    margin-left: 2%;
+    margin-top: 2%;
+    margin-bottom: 1%;
+    margin-right: 2%;
+    height: 2opx;
+}
+
+button:hover{
+    background: whitesmoke;
+    color: green;
+    border-radius: 8px;
+    font-family: Arial, Helvetica, sans-serif;
+    border: greenyellow;
+    padding: auto;
+    margin-left: 2%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    margin-right: 2%;
+    height: 20px;
+    top: 1%;
+    bottom: 2%;
+}
+
+.h1{
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgba(31,121,9,1);
+    font-size: large;
+}
+
+.h2{
+    font-family: Arial, Helvetica, sans-serif;
+    color: greenyellow;
+    font-size: large;
+}
+
+.link{
+    color: rgba(31,121,9,1);
+}
+
+.button{
+    background-color: aquamarine;
+    color: green;
+    height: 25px;
+    width: 75px;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+.link{
+    list-style: none;
+    text-decoration: underline;
+    text-decoration-color: green;
+}
+
+p{
+    color: rgba(0,255,35,1);
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+}
+
+section{
+    display: flex;
+    height: 170px;
+    width: 100px;
+}
