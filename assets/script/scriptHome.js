@@ -38,11 +38,11 @@ function cerrarPagina() {
 }
 
 function agrandar(img) {
-    img.style.width = "100%";
-    img.style.height = "100%";
+    img.style.width = "30%";
+    img.style.height = "50%";
     img.style.position = "fixed";
-    img.style.top = "0";
-    img.style.left = "0";
+    img.style.top = "25vh";
+    img.style.left = "70vh";
     img.style.backgroundColor = "rgba(0, 0, 0, 0.7)";
     img.style.zIndex = "1";
     img.onclick = function() {
@@ -59,6 +59,6 @@ function restoreSize(img) {
     img.style.backgroundColor = "";
     img.style.zIndex = "";
     img.onclick = function() {
-        enlargeImg(img);
+        agrandar(img);
     };
 }

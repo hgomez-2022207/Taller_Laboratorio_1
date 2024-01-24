@@ -1,12 +1,13 @@
 main{
     
     max-width: 800px;
-    margin: 60px auto;
+    margin: 10vh auto;
     padding: 20px;
     background-color: #ffffff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     align-items: center;
     color: rgba(31,121,9,1);
+    border-radius: 8px;
 }
 
 nav{
@@ -90,7 +91,14 @@ p{
 }
 
 section{
+    margin-left: 5vh;
+    margin-bottom: 5vh;
     display: flex;
     height: 170px;
     width: 100px;
+}
+
+img{
+    height: 180px;
+    width: 180px;
 }

@@ -10,6 +10,13 @@
             background: linear-gradient(90deg, rgba(28,36,0,1) 0%, rgba(31,121,9,1) 35%, rgba(0,255,35,1) 100%);;
         }
     </style>
+    <script type="text/javascript">
+        function enviaForm(){
+        var nombre = document.getElementById("name").value;
+        var correo = document.getElementById("email").value;
+        alert("Bienvenido: "+nombre+" "+correo);
+}
+    </script>
 </head>
 <body>
     <nav class="nav container" align="left">
@@ -52,11 +59,11 @@
             <div align="center">
                 <h1><a class="link" href="https://github.com/hgomez-2022207/Tics.git">Sitios Turísticos</a></h1>
                 <p>
-                    <img src="./resource/SitiosT.png" height="180px" width="180px">
+                    <img src="./resource/SitiosT.png" id="" class="galery-img" onclick="agrandar(this)">
                 </p>
                 <h1 align="center"><a class="link" href="https://github.com/lreyes2021490/KinalSounds.git">Kinal Sounds</a></h1>
                 <p align="center">
-                    <img src="./resource/KinalS.png" height="180px" width="180px">
+                    <img src="./resource/KinalS.png" id="" class="galery-img" onclick="agrandar(this)">
                 </p>
             </div>
             <hr>
@@ -66,12 +73,12 @@
                 <h2 align="center">Habilidades</h2>
                 <section>
                 
-                    <img src="./resource/java.jpeg">
-                    <img src="./resource/Js.png">
+                    <img src="./resource/java.jpeg" id="" class="galery-img" onclick="agrandar(this)">
+                    <img src="./resource/Js.png" id="" class="galery-img" onclick="agrandar(this)">
                
                 
-                    <img src="./resource/html.png">
-                    <img src="./resource/MySQL.png">
+                    <img src="./resource/html.png" id="" class="galery-img" onclick="agrandar(this)">
+                    <img src="./resource/MySQL.png" id="" class="galery-img" onclick="agrandar(this)">
                 
                 </section>
             </div>
@@ -86,18 +93,22 @@
             <h1 align="center">Formulario</h1>
             <br>
             <h2>Nombre:</h2>
-            <input type="text" style="width: 450px;">
+            <input type="text" id="name" style="width: 450px;">
+            <br>
+            <h2>Email:</h2>
+            <input type="text" id="email" style="width: 450px;">
             <br>
             <h2>Fecha de nacimiento:</h2>
             <br>
-            <input type="text" style="width: 200px;">
+            <input type="text" id="date" style="width: 200px;">
             <h2>Nacionalidad:</h2>
             <br>
-            <input type="text" style="width: 300px;">
-            <a href=""><button class="button">Enviar</button></a>
+            <input type="text" id="country" style="width: 300px;">
+            <button class="button" onclick="mostrar(name,email)">Enviar</button>
             <hr>
         </div>
         
     </main>
+    <script src="./script/scriptBiografia.js"></script>
 </body>
 </html>
